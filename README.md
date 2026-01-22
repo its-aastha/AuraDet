@@ -43,7 +43,7 @@ AuraDet/
 │   ├── app.py
 │   ├── deploy.prototxt
 │   ├── res10_300x300_ssd_iter_140000.caffemodel
-│   
+│   ├── test_mediapipe.py
 │
 ├── frontend/
 │   ├── index.html
