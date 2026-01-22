@@ -1,6 +1,6 @@
 flask
 opencv-python
+mediapipe
 deepface
-tensorflow==2.12.0
-tf-keras
-numpy
+tensorflow
+retina-face
