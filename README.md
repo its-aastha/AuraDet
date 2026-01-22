@@ -43,15 +43,14 @@ AuraDet/
 │   ├── app.py
 │   ├── deploy.prototxt
 │   ├── res10_300x300_ssd_iter_140000.caffemodel
-│   └── requirements.txt
+│   
 │
 ├── frontend/
-│   ├── templates/
-│   │   └── index.html
-│   └── static/
-│       └── style.css
+│   ├── index.html
+│   └── style.css
 │
 └── README.md
+└── requirements.txt
 ```
 
 ## How to run
