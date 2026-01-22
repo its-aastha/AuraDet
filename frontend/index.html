@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AuraDet</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+<h1>🌈 AuraDet – Emotion Detection</h1>
+
+<input type="file" id="imageInput">
+<br><br>
+<button onclick="detectEmotion()">Detect Emotion</button>
+<link rel="stylesheet" href="style.css">
+
+
+<p id="result"></p>
+
+<script>
+async function detectEmotion() {
+    const file = document.getElementById("imageInput").files[0];
+    if (!file) {
+        alert("Please select an image");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("image", file);
+
+    const response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.error) {
+        document.getElementById("result").innerText = data.error;
+    } else {
+        document.getElementById("result").innerText =
+            `Emotion: ${data.emotion} (${data.confidence}%)`;
+    }
+}
+</script>
+
+</body>
+</html>
