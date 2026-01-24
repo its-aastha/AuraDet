@@ -5,8 +5,8 @@ from deepface import DeepFace
 
 app = Flask(
     __name__,
-    template_folder="../frontend/templates",
-    static_folder="../frontend/static"
+    template_folder="../frontend",
+    static_folder="../frontend"
 )
 
 # Load OpenCV DNN face detector
