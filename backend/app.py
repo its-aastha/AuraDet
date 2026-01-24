@@ -31,8 +31,8 @@ suggestions = {
     "fear": "Relax. Everything will be okay.",
     "surprise": "Take a moment to process your feelings.",
     "disgust": "Try shifting your focus to something positive."
-}
 
+}
 def generate_frames():
     global frame_count, last_faces
 

@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>AuraDet – Facial Emotion Recognition</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<h1>AuraDet – Live Facial Emotion Detection</h1>
-<p>Real-time emotion recognition using AI</p>
+<div class="container">
 
-<img src="{{ url_for('video_feed') }}" class="video">
+    <header>
+        <h1>Aura<span>Det</span></h1>
+        <p class="subtitle">Real-time AI Facial Expression Detection</p>
+    </header>
 
-<footer>
-    <p>AuraDet | AI-based Emotion Detection System</p>
-</footer>
+    <div class="card">
+        <div class="status">
+            <span class="dot"></span> Live Camera Feed
+        </div>
+
+        <img src="{{ url_for('video_feed') }}" class="video" alt="Live Video Feed">
+    </div>
+
+    <footer>
+        <p>AuraDet | AI-Powered Expression Recognition System</p>
+    </footer>
+
+</div>
 
 </body>
 </html>
