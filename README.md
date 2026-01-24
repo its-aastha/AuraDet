@@ -1,61 +1,48 @@
-# AuraDet  
-### Facial Emotion Detection Web Application
+# AuraDet 🎯😄
 
-AuraDet is a **real-time facial emotion detection web application** that uses **computer vision** and **deep learning** to identify human emotions from a live webcam feed and display them on a web interface.
+AuraDet is an **AI-powered real-time facial emotion detection system** built using **Python, OpenCV, DeepFace, and Flask**.  
+It detects facial expressions through a webcam and displays emotion-based feedback in real time via a web interface.
 
----
-
-## Key Features
-
--  Live webcam-based emotion detection  
--  Multi-face support  
--  Real-time web interface using Flask  
--  Optimized for smooth performance  
--  Uses pre-trained deep learning models  
+This project is designed to support **focus, emotional awareness, and human–computer interaction**, especially useful for students and AI-based monitoring systems.
 
 ---
 
-## Working Overview
+## 🚀 Features
 
-1. Webcam captures live video  
-2. Faces are detected using **OpenCV DNN**  
-3. Emotions are predicted using **DeepFace**  
-4. Results are streamed to the browser  
+- 🎥 Real-time webcam video streaming  
+- 🙂 Facial emotion detection (happy, sad, angry, neutral, fear, surprise, disgust)  
+- 🧠 Deep learning–based emotion analysis using **DeepFace**  
+- 👀 Face detection using **OpenCV DNN (Caffe model)**  
+- 🌐 Web interface using **Flask + HTML/CSS**  
+- ⚡ Frame skipping for better performance  
 
 ---
 
-## Technologies Used
+## 🗂️ Project Structure
+AURADET/
+│
+├── backend/
+│ ├── app.py
+│ ├── deploy.prototxt
+│ ├── res10_300x300_ssd_iter_140000.caffemodel
+│ └── test_mediapipe.py
+│
+├── frontend/
+│ ├── index.html
+│ └── style.css
+│
+├── requirements.txt
+└── README.md
+---
 
-- Python  
+## 🛠️ Technologies Used
+
+- Python 3  
 - Flask  
 - OpenCV  
 - DeepFace  
-- TensorFlow  
-- HTML, CSS  
+- MediaPipe  
+- HTML & CSS  
 
 ---
 
-## 📁 Project Structure
-
-```text
-AuraDet/
-├── backend/
-│   ├── app.py
-│   ├── deploy.prototxt
-│   ├── res10_300x300_ssd_iter_140000.caffemodel
-│   ├── test_mediapipe.py
-│
-├── frontend/
-│   ├── index.html
-│   └── style.css
-│
-└── README.md
-└── requirements.txt
-```
-
-## How to run
-cd backend
-pip install -r requirements.txt
-python app.py
-
-http://127.0.0.1:5000
