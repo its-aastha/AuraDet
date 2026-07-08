@@ -57,3 +57,6 @@ AURADET/
 ├── requirements.txt                                          # Dependencies
 └── README.md
 ```
+
+##To run 
+cd/backend :- python app.py
