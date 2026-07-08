@@ -58,5 +58,9 @@ AURADET/
 └── README.md
 ```
 
+---
 ##To run 
 cd/backend :- python app.py
+note :- before you run install this dependecies
+pip install -r requirements.txt
+---
